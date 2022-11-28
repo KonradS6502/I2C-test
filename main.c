@@ -30,7 +30,6 @@ int main(void) {
 
 void I2C_init(void){
     TWI0.MBAUD=0xFF;
-    
     TWI0.MCTRLA|=_BV(0);
     TWI0.MSTATUS|=_BV(0);
 }
