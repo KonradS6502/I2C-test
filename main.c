@@ -20,7 +20,7 @@ int main(void) {
     I2C_init();
     write_EEPROM(0x1,0xAD);
     while(1){
-        GPR.GPR0=read_random_EEPROM(0x100);
+        GPR.GPR0=read_random_EEPROM(0x1);
         asm("nop");
     }
 }

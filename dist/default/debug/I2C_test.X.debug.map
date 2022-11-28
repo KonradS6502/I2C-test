@@ -11,16 +11,16 @@ Discarded input sections
 
  .data          0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
  .bss           0x0000000000000000        0x0 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
- .text          0x0000000000000000        0x0 build/default/production/main.o
- .data          0x0000000000000000        0x0 build/default/production/main.o
- .bss           0x0000000000000000        0x0 build/default/production/main.o
+ .text          0x0000000000000000        0x0 build/default/debug/main.o
+ .data          0x0000000000000000        0x0 build/default/debug/main.o
+ .bss           0x0000000000000000        0x0 build/default/debug/main.o
  .text.PORTA_conf
-                0x0000000000000000       0x12 build/default/production/main.o
- .text          0x0000000000000000        0x0 build/default/production/eepromAT24C.o
- .data          0x0000000000000000        0x0 build/default/production/eepromAT24C.o
- .bss           0x0000000000000000        0x0 build/default/production/eepromAT24C.o
+                0x0000000000000000       0x12 build/default/debug/main.o
+ .text          0x0000000000000000        0x0 build/default/debug/eepromAT24C.o
+ .data          0x0000000000000000        0x0 build/default/debug/eepromAT24C.o
+ .bss           0x0000000000000000        0x0 build/default/debug/eepromAT24C.o
  .text.I2C_0_setNACKAction
-                0x0000000000000000        0xc build/default/production/eepromAT24C.o
+                0x0000000000000000        0xc build/default/debug/eepromAT24C.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4/memx-const\libc.a(exit.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4/memx-const\libc.a(exit.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4/memx-const\libc.a(exit.o)
@@ -64,11 +64,13 @@ Address of section .data set to 0x804000
                 0x0000000000008000                __RODATA_PM_OFFSET__ = 0x8000
 LOAD C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
-LOAD build/default/production/main.o
-LOAD build/default/production/eepromAT24C.o
+LOAD build/default/debug/main.o
+LOAD build/default/debug/eepromAT24C.o
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4/memx-const\libm.a
 END GROUP
+                0x0000000000000001                __MPLAB_DEBUG = 0x1
+                0x0000000000000001                __DEBUG = 0x1
 START GROUP
 LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/avrxmega4/memx-const\libgcc.a
 LOAD c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4/memx-const\libm.a
@@ -315,9 +317,9 @@ END GROUP
 
 .comment        0x0000000000000000       0x2f
  *(.comment)
- .comment       0x0000000000000000       0x2f build/default/production/main.o
+ .comment       0x0000000000000000       0x2f build/default/debug/main.o
                                          0x30 (size before relaxing)
- .comment       0x000000000000002f       0x30 build/default/production/eepromAT24C.o
+ .comment       0x000000000000002f       0x30 build/default/debug/eepromAT24C.o
  .comment       0x000000000000002f       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4/memx-const\libc.a(exit.o)
  .comment       0x000000000000002f       0x30 c:/program files/microchip/xc8/v2.36/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega4/memx-const\libc.a(_Exit.o)
 
@@ -351,45 +353,45 @@ END GROUP
 .debug_aranges  0x0000000000000000       0x80
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x30 build/default/production/main.o
+                0x0000000000000000       0x30 build/default/debug/main.o
  .debug_aranges
-                0x0000000000000030       0x50 build/default/production/eepromAT24C.o
+                0x0000000000000030       0x50 build/default/debug/eepromAT24C.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x323e
+.debug_info     0x0000000000000000     0x3256
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x2504 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
- .debug_info    0x0000000000002504      0x695 build/default/production/main.o
- .debug_info    0x0000000000002b99      0x6a5 build/default/production/eepromAT24C.o
+ .debug_info    0x0000000000002504      0x6a0 build/default/debug/main.o
+ .debug_info    0x0000000000002ba4      0x6b2 build/default/debug/eepromAT24C.o
 
 .debug_abbrev   0x0000000000000000     0x2555
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000     0x230e C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
- .debug_abbrev  0x000000000000230e       0xf9 build/default/production/main.o
- .debug_abbrev  0x0000000000002407      0x14e build/default/production/eepromAT24C.o
+ .debug_abbrev  0x000000000000230e       0xf9 build/default/debug/main.o
+ .debug_abbrev  0x0000000000002407      0x14e build/default/debug/eepromAT24C.o
 
 .debug_line     0x0000000000000000      0x564
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000      0x190 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
- .debug_line    0x0000000000000190      0x15c build/default/production/main.o
- .debug_line    0x00000000000002ec      0x278 build/default/production/eepromAT24C.o
+ .debug_line    0x0000000000000190      0x15c build/default/debug/main.o
+ .debug_line    0x00000000000002ec      0x278 build/default/debug/eepromAT24C.o
 
 .debug_frame    0x0000000000000000       0xe4
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0x44 build/default/production/main.o
- .debug_frame   0x0000000000000044       0xa0 build/default/production/eepromAT24C.o
+ .debug_frame   0x0000000000000000       0x44 build/default/debug/main.o
+ .debug_frame   0x0000000000000044       0xa0 build/default/debug/eepromAT24C.o
 
 .debug_str      0x0000000000000000     0x1016
  *(.debug_str)
  .debug_str     0x0000000000000000      0xfdc C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
- .debug_str     0x0000000000000fdc       0x2b build/default/production/main.o
- .debug_str     0x0000000000001007        0xf build/default/production/eepromAT24C.o
+ .debug_str     0x0000000000000fdc       0x2b build/default/debug/main.o
+ .debug_str     0x0000000000001007        0xf build/default/debug/eepromAT24C.o
 
 .debug_loc      0x0000000000000000      0x104
  *(.debug_loc)
- .debug_loc     0x0000000000000000      0x104 build/default/production/eepromAT24C.o
+ .debug_loc     0x0000000000000000      0x104 build/default/debug/eepromAT24C.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -411,12 +413,12 @@ END GROUP
 
 .debug_ranges   0x0000000000000000       0x60
  *(.debug_ranges)
- .debug_ranges  0x0000000000000000       0x20 build/default/production/main.o
- .debug_ranges  0x0000000000000020       0x40 build/default/production/eepromAT24C.o
+ .debug_ranges  0x0000000000000000       0x20 build/default/debug/main.o
+ .debug_ranges  0x0000000000000020       0x40 build/default/debug/eepromAT24C.o
 
 .debug_macro
  *(.debug_macro)
-OUTPUT(dist/default/production/I2C_test.X.production.elf elf32-avr)
+OUTPUT(dist/default/debug/I2C_test.X.debug.elf elf32-avr)
 LOAD linker stubs
 LOAD data_init
 
@@ -428,22 +430,22 @@ LOAD data_init
 .text.write_EEPROM
                 0x00000000000000bc       0x60
  .text.write_EEPROM
-                0x00000000000000bc       0x60 build/default/production/eepromAT24C.o
+                0x00000000000000bc       0x60 build/default/debug/eepromAT24C.o
                 0x00000000000000bc                write_EEPROM
 
 .text.read_random_EEPROM
                 0x000000000000011c       0x58
  .text.read_random_EEPROM
-                0x000000000000011c       0x58 build/default/production/eepromAT24C.o
+                0x000000000000011c       0x58 build/default/debug/eepromAT24C.o
                 0x000000000000011c                read_random_EEPROM
 
 .text.main      0x0000000000000174       0x1c
- .text.main     0x0000000000000174       0x1c build/default/production/main.o
+ .text.main     0x0000000000000174       0x1c build/default/debug/main.o
                 0x0000000000000174                main
 
 .text.I2C_init  0x0000000000000190       0x16
  .text.I2C_init
-                0x0000000000000190       0x16 build/default/production/main.o
+                0x0000000000000190       0x16 build/default/debug/main.o
                 0x0000000000000190                I2C_init
 
 .text.exit      0x00000000000001a6       0x16
@@ -453,25 +455,25 @@ LOAD data_init
 .text.I2C_0_transmittingAddrPacket
                 0x00000000000001bc       0x14
  .text.I2C_0_transmittingAddrPacket
-                0x00000000000001bc       0x14 build/default/production/eepromAT24C.o
+                0x00000000000001bc       0x14 build/default/debug/eepromAT24C.o
                 0x00000000000001bc                I2C_0_transmittingAddrPacket
 
 .text.I2C_0_receivingDataPacket
                 0x00000000000001d0       0x10
  .text.I2C_0_receivingDataPacket
-                0x00000000000001d0       0x10 build/default/production/eepromAT24C.o
+                0x00000000000001d0       0x10 build/default/debug/eepromAT24C.o
                 0x00000000000001d0                I2C_0_receivingDataPacket
 
 .text.I2C_0_sendMasterCommand
                 0x00000000000001e0        0xc
  .text.I2C_0_sendMasterCommand
-                0x00000000000001e0        0xc build/default/production/eepromAT24C.o
+                0x00000000000001e0        0xc build/default/debug/eepromAT24C.o
                 0x00000000000001e0                I2C_0_sendMasterCommand
 
 .text.I2C_0_setACKAction
                 0x00000000000001ec        0xa
  .text.I2C_0_setACKAction
-                0x00000000000001ec        0xa build/default/production/eepromAT24C.o
+                0x00000000000001ec        0xa build/default/debug/eepromAT24C.o
                 0x00000000000001ec                I2C_0_setACKAction
 
 .text           0x00000000000001f6        0x4
