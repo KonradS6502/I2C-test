@@ -4,19 +4,12 @@
 static void I2C_0_transmittingAddrPacket(uint8_t slaveAddres, uint8_t directionBit)
 {
     TWI0.MADDR = I2C_SET_ADDR_POSITION(slaveAddres) + directionBit;
-    while (!I2C_SLAVE_RESPONSE_ACKED)
-    {
-        ;
-    }    
+    while (!I2C_SLAVE_RESPONSE_ACKED){};  
 }
 
 static uint8_t I2C_0_receivingDataPacket(void)
 {
-    while (!I2C_DATA_RECEIVED)
-    {
-        ;
-    }
-
+    while (!I2C_DATA_RECEIVED){};
     return TWI0.MDATA;    
 }
 
