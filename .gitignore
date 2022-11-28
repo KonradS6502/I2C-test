@@ -28,3 +28,4 @@
 # Misc
 .svn
 *.bak
+dist/default/production/I2C_test.X.production.map

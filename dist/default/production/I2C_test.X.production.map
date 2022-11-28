@@ -360,15 +360,15 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x2ba7
+.debug_info     0x0000000000000000     0x2b99
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x2504 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
- .debug_info    0x0000000000002504      0x6a3 build/default/production/main.o
+ .debug_info    0x0000000000002504      0x695 build/default/production/main.o
 
-.debug_abbrev   0x0000000000000000     0x2414
+.debug_abbrev   0x0000000000000000     0x2407
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000     0x230e C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/AVR-Dx_DFP/2.2.159/xc8/avr/lib/avrxmega4/memx-const/crtavr128da28.o
- .debug_abbrev  0x000000000000230e      0x106 build/default/production/main.o
+ .debug_abbrev  0x000000000000230e       0xf9 build/default/production/main.o
 
 .debug_line     0x0000000000000000      0x2ec
  *(.debug_line .debug_line.* .debug_line_end)

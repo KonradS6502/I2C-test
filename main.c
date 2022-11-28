@@ -18,7 +18,6 @@ void PORTA_conf(void){
 void I2C_init(void);
 
 int main(void) {
-    volatile uint8_t data_r;
     I2C_init();
     write_EEPROM(0x1,0xAD);
     while(1){
