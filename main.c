@@ -4,7 +4,6 @@
  *
  * Created on 27 listopada 2022, 14:10
  */
-#define F_CPU 24000000
 
 #include <avr/io.h>
 #include "eepromAT24C.h"
